@@ -24,12 +24,16 @@
   <h2>3. Services tiers</h2>
   <p>Pour rechercher des reproductions d'œuvres et enrichir les fiches, l'app transmet des données à des services tiers :</p>
   <ul>
-    <li><strong>Claude (Anthropic) via un proxy sécurisé — l'app envoie le texte brut reconnu sur le cartel photographié (qui peut inclure titre, artiste, date, technique, institution, numéro d'inventaire, etc.). Aucune image n'est transmise, uniquement le texte extrait.</li>
-    <li><strong>APIs publiques de musées (The Met, Art Institute of Chicago, Rijksmuseum, Wikimedia, Harvard Art Museums, Europeana, Gallica, etc.) — l'app envoie le titre et le nom de l'artiste pour rechercher des reproductions et compléter les métadonnées. Requêtes en lecture seule, sans identification.</li>
+    <li><strong>Claude (Anthropic) via un proxy sécurisé</strong> — l'app envoie le texte brut reconnu sur le cartel photographié (qui peut inclure titre, artiste, date, technique, institution, numéro d'inventaire, etc.). Aucune image n'est transmise, uniquement le texte extrait.</li>
+    <li><strong>APIs publiques de musées (The Met, Art Institute of Chicago, Rijksmuseum, Wikimedia, Harvard Art Museums, Europeana, Gallica, etc.)</strong> — l'app envoie le titre et le nom de l'artiste pour rechercher des reproductions et compléter les métadonnées. Requêtes en lecture seule, sans identification.</li>
   </ul>
 
   <h2>4. Localisation</h2>
-  <p>L'app peut accéder à votre position pour enregistrer le lieu où vous avez vu une œuvre. Cette donnée est stockée localement et n'est jamais transmise à des tiers.</p>
+  <p>L'app utilise votre position géographique de deux façons :</p>
+   <ul>
+    <li><strong>Métadonnées EXIF :</strong> si une photo importée depuis votre galerie contient des coordonnées GPS, celles-ci sont extraites automatiquement pour identifier le musée où l'œuvre a été vue.</li>
+    <li><strong>Position courante :</strong> lors du scan d'un cartel, l'app peut vous demander l'accès à votre position pour suggérer automatiquement le musée où vous vous trouvez.</li>
+  </ul>
 
   <h2>5. Publicité et pistage</h2>
   <p>L'application ne contient aucune publicité et n'effectue aucun pistage publicitaire.</p>
