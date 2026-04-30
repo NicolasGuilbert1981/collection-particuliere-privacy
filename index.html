@@ -22,10 +22,10 @@
   <p>Toutes vos données sont stockées localement sur votre appareil et, si vous êtes connecté à iCloud, synchronisées dans votre base iCloud privée (CloudKit). Elles ne sont accessibles qu'à vous et ne transitent jamais par nos serveurs.</p>
 
   <h2>3. Services tiers</h2>
-  <p>Pour rechercher des reproductions d'œuvres et enrichir les fiches, l'app envoie le titre et le nom de l'artiste à :</p>
+  <p>Pour rechercher des reproductions d'œuvres et enrichir les fiches, l'app transmet des données à des services tiers :</p>
   <ul>
-    <li><strong>Claude (Anthropic)</strong> via un proxy sécurisé — aucune donnée personnelle n'est transmise, uniquement les métadonnées de l'œuvre.</li>
-    <li><strong>APIs publiques de musées</strong> (The Met, Art Institute of Chicago, Rijksmuseum, Wikimedia, etc.) — requêtes en lecture seule, sans identification.</li>
+    <li><strong>Claude (Anthropic) via un proxy sécurisé — l'app envoie le texte brut reconnu sur le cartel photographié (qui peut inclure titre, artiste, date, technique, institution, numéro d'inventaire, etc.). Aucune image n'est transmise, uniquement le texte extrait.</li>
+    <li><strong>APIs publiques de musées (The Met, Art Institute of Chicago, Rijksmuseum, Wikimedia, Harvard Art Museums, Europeana, Gallica, etc.) — l'app envoie le titre et le nom de l'artiste pour rechercher des reproductions et compléter les métadonnées. Requêtes en lecture seule, sans identification.</li>
   </ul>
 
   <h2>4. Localisation</h2>
